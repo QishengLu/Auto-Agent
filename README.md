@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="./assets/logo.jpg" alt="Logo" width="200">
-  <h1 align="center">Auto-Deep-Research: Your Fully-Automated Personal Assistant </h1>
+  <h1 align="center">Auto-Deep-Research:</br> Your Fully-Automated Personal AI Assistant </h1>
 </div>
 
 
