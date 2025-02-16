@@ -84,7 +84,7 @@ Auto-Deep-Research represents our commitment to both the community's needs and t
 
 ### Installation
 
-#### MetaChain Installation
+#### Auto-Deep-Research Installation
 
 ```bash
 conda create -n auto_deep_research python=3.10
@@ -262,7 +262,7 @@ More features coming soon! 🚀 **Web GUI interface** under development.
 
 ## ☑️ Todo List
 
-MetaChain is continuously evolving! Here's what's coming:
+Auto-Deep-Research is continuously evolving! Here's what's coming:
 
 - 🖥️ **GUI Agent**: Supporting *Computer-Use* agents with GUI interaction
 - 🏗️ **Code Sandboxes**: Supporting additional environments like **E2B**
