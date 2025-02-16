@@ -61,7 +61,7 @@ ADD_USER = str_to_bool(os.getenv('ADD_USER', None))
 NOT_SUPPORT_SENDER = ["mistral", "groq"]
 MUST_ADD_USER = ["deepseek-reasoner", "o1-mini", "deepseek-r1"]
 
-NOT_SUPPORT_FN_CALL = ["o1-mini", "deepseek-reasoner", "deepseek-r1", "llama"]
+NOT_SUPPORT_FN_CALL = ["o1-mini", "deepseek-reasoner", "deepseek-r1", "llama", "grok-2"]
 NOT_USE_FN_CALL = [ "deepseek-chat"] + NOT_SUPPORT_FN_CALL
 
 if ADD_USER is None:

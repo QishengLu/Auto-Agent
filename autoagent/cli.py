@@ -108,10 +108,9 @@ def update_guidance(context_variables):
 @cli.command(name='deep-research')  # 修改这里，使用连字符
 @click.option('--container_name', default='deepresearch', help='the function to get the agent')
 @click.option('--port', default=12346, help='the port to run the container')
-@click.option('--debug', default=False, help='the debug mode')
-def deep_research(container_name: str, port: int, debug: bool):
+def deep_research(container_name: str, port: int):
     """
-    Run deep research with a given model, container name, port, and debug mode.
+    Run deep research with a given model, container name, port
     """ 
     model = COMPLETION_MODEL
     print('\033[s\033[?25l', end='')  # Save cursor position and hide cursor
@@ -188,7 +187,7 @@ def deep_research(container_name: str, port: int, debug: bool):
             agent_name = agent.name
             console.print(f"[bold green][bold magenta]@{agent_name}[/bold magenta] will help you, be patient...[/bold green]")
             messages.append({"role": "user", "content": query})
-            response = client.run(agent, messages, context_variables, debug=debug)
+            response = client.run(agent, messages, context_variables, debug=False)
             messages.extend(response.messages)
             model_answer_raw = response.messages[-1]['content']
 
