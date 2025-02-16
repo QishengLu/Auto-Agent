@@ -12,6 +12,8 @@ from dataclasses import dataclass, field
 from typing import Optional, Union, Dict
 from functools import update_wrapper
 from inspect import signature
+import requests
+
 @dataclass
 class DockerConfig: 
     container_name: str
@@ -46,8 +48,16 @@ class DockerEnv:
         os.makedirs(self.local_workplace, exist_ok=True)
         
         if not osp.exists(osp.join(self.local_workplace, 'tcp_server.py')):
-            shutil.copy(osp.join(wd, 'tcp_server.py'), self.local_workplace)
-            assert osp.exists(osp.join(self.local_workplace, 'tcp_server.py')), "Failed to copy tcp_server.py to the local workplace"
+            # shutil.copy(osp.join(wd, 'tcp_server.py'), self.local_workplace)
+            # assert osp.exists(osp.join(self.local_workplace, 'tcp_server.py')), "Failed to copy tcp_server.py to the local workplace"
+            url = "https://raw.githubusercontent.com/tjb-tech/agent.midware/refs/heads/main/tcp_server.py"
+            response = requests.get(url)
+            if response.status_code == 200:
+                with open(osp.join(self.local_workplace, 'tcp_server.py'), 'w') as f:
+                    f.write(response.text)
+                assert osp.exists(osp.join(self.local_workplace, 'tcp_server.py')), "Failed to save tcp_server.py to the local workplace"
+            else:
+                raise Exception(f"Failed to download tcp_server.py from GitHub. Status code: {response.status_code}")
         if self.setup_package is not None:
             unzip_command = ["tar", "-xzvf", f"packages/{self.setup_package}.tar.gz", "-C", self.local_workplace]
             subprocess.run(unzip_command)

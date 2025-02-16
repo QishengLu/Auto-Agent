@@ -39,7 +39,7 @@ def get_architecture():
     if 'x86' in machine or 'amd64' in machine or 'i386' in machine:
         return "tjbtech1/metachain:amd64_latest"
     elif 'arm' in machine:
-        return "tjbtech1/metachain:arm64_latest"
+        return "tjbtech1/metachain:latest"
     else: 
         return "tjbtech1/metachain:latest"
 if BASE_IMAGES is None:

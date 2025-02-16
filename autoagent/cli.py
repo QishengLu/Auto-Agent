@@ -74,6 +74,7 @@ def get_config(container_name, port):
                 f.write(container_name)
     local_root = os.path.join(os.getcwd(), f"workspace_meta_showcase", f"showcase_{container_name}")
     os.makedirs(local_root, exist_ok=True)
+    print("port: ", port)
     docker_config = DockerConfig(
         workplace_name=DOCKER_WORKPLACE_NAME,
         container_name=container_name,
@@ -112,6 +113,7 @@ def deep_research(container_name: str, port: int):
     """
     Run deep research with a given model, container name, port
     """ 
+    print(f"port: {port}")
     model = COMPLETION_MODEL
     print('\033[s\033[?25l', end='')  # Save cursor position and hide cursor
     with Progress(
