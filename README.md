@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="./assets/logo.jpg" alt="Logo" width="200">
-  <h1 align="center">Auto-Deep-Research:</br> Your Fully-Automated Personal AI Assistant </h1>
+  <h1 align="center">Auto-Deep-Research:</br> Your Fully-Automated and Cost-Effective Personal AI Assistant </h1>
 </div>
 
 
@@ -20,7 +20,7 @@
   <hr>
 </div>
 
-Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-efficient alternative to OpenAI's Deep Research, based on [AutoAgent (formerly MetaChain)](https://github.com/HKUDS/AutoAgent) framework.
+Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-efficient alternative to OpenAI's Deep Research, based on [AutoAgent](https://github.com/HKUDS/AutoAgent) framework.
 
 ## ✨Key Features
 
