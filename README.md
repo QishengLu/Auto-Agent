@@ -296,7 +296,15 @@ Rome wasn't built in a day. Auto-Deep-Research is built on the [AutoAgent](https
 ## 🌟 Cite
 
 ```tex
-
+@misc{AutoAgent,
+      title={{AutoAgent: A Fully-Automated and Zero-Code Framework for LLM Agents}},
+      author={Jiabin Tang, Tianyu Fan, Chao Huang},
+      year={2025},
+      eprint={202502.05957},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2502.05957},
+}
 ```
 
 
