@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="./assets/logo.jpg" alt="Logo" width="200">
-  <h1 align="center">Auto-Deep-Research:</br> Your Fully-Automated Personal AI Assistant </h1>
+  <h1 align="center">Auto-Deep-Research:</br> Your Fully-Automated and Cost-Effective Personal AI Assistant </h1>
 </div>
 
 
@@ -20,7 +20,7 @@
   <hr>
 </div>
 
-Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-efficient alternative to OpenAI's Deep Research, based on [AutoAgent (formerly MetaChain)](https://github.com/HKUDS/AutoAgent) framework.
+Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-efficient alternative to OpenAI's Deep Research, based on [AutoAgent](https://github.com/HKUDS/AutoAgent) framework.
 
 ## ✨Key Features
 
@@ -39,7 +39,7 @@ Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-effi
 
 <div class="scrollable">
     <ul>
-      <li><strong>[2025, Feb 16]</strong>: &nbsp;🎉🎉We've cleaned up the codebase of [AutoAgent](https://github.com/HKUDS/AutoAgent), removed the irrelevant parts for Auto-Deep-Research and released the first version of Auto-Deep-Research.</li>
+      <li><strong>[2025, Feb 16]</strong>: &nbsp;🎉🎉We've cleaned up the codebase of <a href="https://github.com/HKUDS/AutoAgent">AutoAgent</a>, removed the irrelevant parts for Auto-Deep-Research and released the first version of Auto-Deep-Research.</li>
     </ul>
 </div>
 <span id='table-of-contents'/>
@@ -296,7 +296,15 @@ Rome wasn't built in a day. Auto-Deep-Research is built on the [AutoAgent](https
 ## 🌟 Cite
 
 ```tex
-
+@misc{AutoAgent,
+      title={{AutoAgent: A Fully-Automated and Zero-Code Framework for LLM Agents}},
+      author={Jiabin Tang, Tianyu Fan, Chao Huang},
+      year={2025},
+      eprint={202502.05957},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2502.05957},
+}
 ```
 
 
