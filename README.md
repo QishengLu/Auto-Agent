@@ -36,9 +36,9 @@ Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-effi
 
 
 ## 🔥 News
-
 <div class="scrollable">
-    <ul>
+    <ul>      
+      <li><strong>[2025, April 1]</strong>: &nbsp;🎉🎉 Click to see what Auto-Deepresearch can do! <a href="https://x.com/huang_chao4969/status/1905620201225482264">[Video 1]</a> <a href="https://x.com/huang_chao4969/status/1891676951015981421">[Video 2]</a></li>
       <li><strong>[2025, Feb 16]</strong>: &nbsp;🎉🎉We've cleaned up the codebase of <a href="https://github.com/HKUDS/AutoAgent">AutoAgent</a>, removed the irrelevant parts for Auto-Deep-Research and released the first version of Auto-Deep-Research.</li>
     </ul>
 </div>
