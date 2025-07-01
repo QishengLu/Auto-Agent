@@ -24,7 +24,7 @@ Welcome to Auto-Deep-Research! Auto-Deep-Research is a open-source and cost-effi
 
 ## ✨Key Features
 
-- 🏆 **High Performance**: Ranks the **#1** spot among open-sourced methods, delivering comparable performance to **OpenAI's Deep Research**.
+- 🚀 **High Performance**: Delivers good performance on GAIA Benchmark.
 - 🌐 **Universal LLM Support**: Seamlessly integrates with **A Wide Range** of LLMs (e.g., OpenAI, Anthropic, Deepseek, vLLM, Grok, Huggingface ...)
 - 🔀 **Flexible Interaction**: Supports both **function-calling** and **non-function-calling** interaction LLMs.
 - 💰 **Cost-Efficient**: Open-source alternative to Deep Research's $200/month subscription with your own pay-as-you-go LLM API keys.
