@@ -31,5 +31,8 @@ terminal_tmp/*
 .port*
 
 dist/*
+autoagent_rca.py
+modification.md
+output.json
 
 question_3/
