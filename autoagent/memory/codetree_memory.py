@@ -104,7 +104,7 @@ class DummyReranker(Reranker):
 
 # 使用示例
 if __name__ == "__main__":
-    code_memory = CodeTreeMemory(project_path = './code_db', db_name='code_tree', platform='OpenAI', api_key='REDACTED_API_KEY')
+    code_memory = CodeTreeMemory(project_path = './code_db', db_name='code_tree', platform='OpenAI', api_key='your_api_key_here')
     
     # 添加代码文件到内存
     code_memory.add_code_files("/Users/tangjiabin/Documents/reasoning/SelfAgent/workplace_test/SelfAgent", exclude_prefix=['workplace_', '__pycache__', 'code_db', '.git'])

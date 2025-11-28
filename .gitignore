@@ -31,3 +31,5 @@ terminal_tmp/*
 .port*
 
 dist/*
+
+question_3/

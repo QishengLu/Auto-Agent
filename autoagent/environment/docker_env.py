@@ -105,9 +105,16 @@ class DockerEnv:
                 return
         
         # if the container does not exist, create and start a new container
+        mount_args = ["-v", f"{self.local_workplace}:{self.docker_workplace}"]
+        
+        # Check for question_3 in current working directory and mount it if exists
+        q3_path = os.path.abspath("question_3")
+        if os.path.exists(q3_path):
+             mount_args.extend(["-v", f"{q3_path}:{self.docker_workplace}/question_3"])
+
         docker_command = [
             "docker", "run", "-d", "--name", self.container_name, "--user", "root",
-            "-v", f"{self.local_workplace}:{self.docker_workplace}",
+            *mount_args,
             "-w", f"{self.docker_workplace}", "-p", f"{self.communication_port}:{self.communication_port}", BASE_IMAGES,
             "/bin/bash", "-c", 
             f"python3 {self.docker_workplace}/tcp_server.py --workplace {self.workplace_name} --conda_path {self.conda_path} --port {self.communication_port}"
